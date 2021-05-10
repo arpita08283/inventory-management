@@ -12,7 +12,7 @@ mysql = MySQL()
 app = Flask(__name__)
 app.secret_key="hello"
 app.config['MYSQL_DATABASE_USER']='QF53HUUBsI'
-app.config['MYSQL_DATABASE_PASSWORD']='qPbAANR3I3'
+app.config['MYSQL_DATABASE_PASSWORD']='password'
 app.config['MYSQL_DATABASE_DB']='QF53HUUBsI'
 app.config['MYSQL_DATABASE_HOST']='remotemysql.com'
 
@@ -281,8 +281,8 @@ def shipping():
                         mail_content = "IT SEEMS ONE OR MORE PRODUCT QUANTITY IS/ARE NO LONGER AVAILABLE IN YOUR STORE.PLEASE LOGIN TO YOUR INVENTORY MANAGEMENT ACCOUNT AND CHECK THE QUANTITY OF ALL THE PRODUCTS AND UPDATE IT SOON..."
                                     
                                     #The mail addresses and password
-                        sender_address = 'hegde1317@gmail.com'
-                        sender_pass = '123456789Appu'
+                        sender_address = 'your email'
+                        sender_pass = 'your password'
                         receiver_address =session['email']
                         
                                         #Setup the MIME
