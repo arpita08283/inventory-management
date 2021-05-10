@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+       <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}">
+</head>
+<body>
+    <section>
+        <div class="form-container">
+            <h1>Admin Login Form</h1>
+        <form method="post" action="">
+            <div class="control">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="username" placeholder="enter name" required>
+            </div>
+            <div class="control">
+            <label for="psw">Password</label>
+            <input type="password" id="psw" name="password" placeholder="enter password" required>
+            </div>
+            <span><input type="checkbox"> Remember me</span>
+            <div class="control">
+            <input type="submit" class="btn" value="Login">
+            </div>
+        </form>
+        <p>Not yet registered?
+			<a href="{{url_for('adminregister')}}">click</a> here to register
+		</p>
+         <a href="/home">  
+      <input type="submit" value="DASH BOARD"/>  
+     </a>
+
+         
+        
+        </div>
+    </section>
+</body>
+</html>
