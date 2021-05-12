@@ -1,8 +1,0 @@
-Flask
-Flask-MySQL
-Flask-MySQLdb
-Jinja2
-sendgrid
-sendmail
-requests
-emoji
